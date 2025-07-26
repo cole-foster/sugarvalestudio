@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Sugarvale Studio'
+theme = "hugo-theme-cleanwhite"
+
+
