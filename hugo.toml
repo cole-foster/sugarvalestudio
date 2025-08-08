@@ -1,6 +1,12 @@
-baseURL = 'https://example.org/'
+baseURL = "https://sugarvalestudio.com/"
 languageCode = 'en-us'
 title = 'Sugarvale Studio'
 theme = "hugo-theme-cleanwhite"
+pluralizeListTitles = false
 
-
+[params]
+SEOTitle = "Sugarvale Studio | Handcrafted Woodwork"
+slogan = "Handcrafted wood pieces built to outlast trends."
+description = "Sugarvale Studio crafts small-batch furniture and everyday objects from sustainably sourced hardwoods—blending crisp joinery, subtle curves, and finishes that invite a lifetime of use."
+header_image = "img/example-chair.png"
+custom_css = ["css/custom.css"]

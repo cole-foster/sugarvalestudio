@@ -1,0 +1,44 @@
+/* Custom overrides */
+.home-intro {
+    margin: 40px auto;
+    max-width: 860px;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    color: #333
+}
+
+.home-intro img {
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 18px -6px rgba(0, 0, 0, .25);
+    margin: 18px 0
+}
+
+/* --- Woodworking vibe overrides --- */
+:root {
+  --sv-bg: #f8f5f0;
+  --sv-paper: #f4efe7;
+  --sv-text: #3a2f28;
+  --sv-accent: #8b5e34; /* warm brown */
+  --sv-accent-alt: #b3834f;
+}
+body { background: var(--sv-bg); color: var(--sv-text); font-family: "Georgia", "Palatino Linotype", serif; }
+.navbar, .navbar-default { background: var(--sv-paper); border-color: #e2d9cc; box-shadow: 0 2px 4px -2px rgba(0,0,0,.08); }
+.navbar a, .navbar-brand { font-family: "Georgia", serif; font-weight: 600; }
+.navbar a:hover { color: var(--sv-accent) !important; }
+.intro-header { background-color: #2f241b; position: relative; }
+.intro-header:before { content:""; position:absolute; inset:0; background:linear-gradient(rgba(47,36,27,.55), rgba(47,36,27,.55)); }
+.intro-header .site-heading { position:relative; }
+.intro-header .site-heading h1 { font-family: "Georgia", serif; letter-spacing:.5px; text-shadow:0 2px 6px rgba(0,0,0,.35); }
+.intro-header .subheading { font-style:italic; font-family: "Georgia", serif; }
+.home-intro { font-family: "Georgia", serif; }
+.home-intro h2 { font-family: "Georgia", serif; color: var(--sv-accent); letter-spacing:.5px; }
+.home-intro p { color: #4a3d33; }
+.home-intro img { box-shadow:none; border: 4px solid #e3d7c8; background:#fff; }
+a { color: var(--sv-accent); }
+a:hover, a:focus { color: var(--sv-accent-alt); }
+hr { border-color:#d9cec1; }
+.post-title, .post-subtitle { font-family: "Georgia", serif; }
+footer { background: var(--sv-paper); border-top:1px solid #e2d9cc; }
+.btn, .pager li > a { background: var(--sv-accent); border-color: var(--sv-accent); }
+.btn:hover, .pager li > a:hover { background: var(--sv-accent-alt); border-color: var(--sv-accent-alt); }
