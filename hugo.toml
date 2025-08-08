@@ -6,7 +6,9 @@ pluralizeListTitles = false
 
 [params]
 SEOTitle = "Sugarvale Studio | Handcrafted Woodwork"
-slogan = "Handcrafted wood pieces built to outlast trends."
+slogan = "One-of-a-Kind Handcrafted Wood Pieces"
 description = "Sugarvale Studio crafts small-batch furniture and everyday objects from sustainably sourced hardwoods—blending crisp joinery, subtle curves, and finishes that invite a lifetime of use."
 header_image = "img/example-chair.png"
 custom_css = ["css/custom.css"]
+
+additional_menus = [{ title = "Gallery", href = "gallery" }]

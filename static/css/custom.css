@@ -16,29 +16,144 @@
 
 /* --- Woodworking vibe overrides --- */
 :root {
-  --sv-bg: #f8f5f0;
-  --sv-paper: #f4efe7;
-  --sv-text: #3a2f28;
-  --sv-accent: #8b5e34; /* warm brown */
-  --sv-accent-alt: #b3834f;
+    --sv-bg: #f8f5f0;
+    --sv-paper: #f4efe7;
+    --sv-text: #3a2f28;
+    --sv-accent: #8b5e34;
+    /* warm brown */
+    --sv-accent-alt: #b3834f;
 }
-body { background: var(--sv-bg); color: var(--sv-text); font-family: "Georgia", "Palatino Linotype", serif; }
-.navbar, .navbar-default { background: var(--sv-paper); border-color: #e2d9cc; box-shadow: 0 2px 4px -2px rgba(0,0,0,.08); }
-.navbar a, .navbar-brand { font-family: "Georgia", serif; font-weight: 600; }
-.navbar a:hover { color: var(--sv-accent) !important; }
-.intro-header { background-color: #2f241b; position: relative; }
-.intro-header:before { content:""; position:absolute; inset:0; background:linear-gradient(rgba(47,36,27,.55), rgba(47,36,27,.55)); }
-.intro-header .site-heading { position:relative; }
-.intro-header .site-heading h1 { font-family: "Georgia", serif; letter-spacing:.5px; text-shadow:0 2px 6px rgba(0,0,0,.35); }
-.intro-header .subheading { font-style:italic; font-family: "Georgia", serif; }
-.home-intro { font-family: "Georgia", serif; }
-.home-intro h2 { font-family: "Georgia", serif; color: var(--sv-accent); letter-spacing:.5px; }
-.home-intro p { color: #4a3d33; }
-.home-intro img { box-shadow:none; border: 4px solid #e3d7c8; background:#fff; }
-a { color: var(--sv-accent); }
-a:hover, a:focus { color: var(--sv-accent-alt); }
-hr { border-color:#d9cec1; }
-.post-title, .post-subtitle { font-family: "Georgia", serif; }
-footer { background: var(--sv-paper); border-top:1px solid #e2d9cc; }
-.btn, .pager li > a { background: var(--sv-accent); border-color: var(--sv-accent); }
-.btn:hover, .pager li > a:hover { background: var(--sv-accent-alt); border-color: var(--sv-accent-alt); }
+
+body {
+    background: var(--sv-bg);
+    color: var(--sv-text);
+    font-family: "Georgia", "Palatino Linotype", serif;
+}
+
+.navbar,
+.navbar-default {
+    background: var(--sv-paper);
+    border-color: #e2d9cc;
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, .08);
+}
+
+.navbar a,
+.navbar-brand {
+    font-family: "Georgia", serif;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: var(--sv-accent) !important;
+}
+
+.intro-header {
+    background-color: #2f241b;
+    position: relative;
+}
+
+.intro-header:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(47, 36, 27, .55), rgba(47, 36, 27, .55));
+}
+
+.intro-header .site-heading {
+    position: relative;
+}
+
+.intro-header .site-heading h1 {
+    font-family: "Georgia", serif;
+    letter-spacing: .5px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+}
+
+.intro-header .subheading {
+    font-style: italic;
+    font-family: "Georgia", serif;
+}
+
+.home-intro {
+    font-family: "Georgia", serif;
+}
+
+.home-intro h2 {
+    font-family: "Georgia", serif;
+    color: var(--sv-accent);
+    letter-spacing: .5px;
+}
+
+.home-intro p {
+    color: #4a3d33;
+}
+
+.home-intro img {
+    box-shadow: none;
+    border: 4px solid #e3d7c8;
+    background: #fff;
+}
+
+a {
+    color: var(--sv-accent);
+}
+
+a:hover,
+a:focus {
+    color: var(--sv-accent-alt);
+}
+
+hr {
+    border-color: #d9cec1;
+}
+
+.post-title,
+.post-subtitle {
+    font-family: "Georgia", serif;
+}
+
+footer {
+    background: var(--sv-paper);
+    border-top: 1px solid #e2d9cc;
+}
+
+.btn,
+.pager li>a {
+    background: var(--sv-accent);
+    border-color: var(--sv-accent);
+}
+
+.btn:hover,
+.pager li>a:hover {
+    background: var(--sv-accent-alt);
+    border-color: var(--sv-accent-alt);
+}
+
+/* Nav readability adjustments */
+.navbar a,
+.navbar-brand,
+.navbar-default .navbar-brand {
+    color: var(--sv-text) !important;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-nav>li>a {
+    color: var(--sv-text) !important;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar a:hover,
+.navbar a:focus,
+.navbar-default .navbar-brand:hover {
+    color: var(--sv-accent) !important;
+    background: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: var(--sv-accent) !important;
+    background: linear-gradient(to bottom, rgba(139, 94, 52, 0.08), rgba(139, 94, 52, 0.0));
+}
