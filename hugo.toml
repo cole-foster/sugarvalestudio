@@ -11,4 +11,14 @@ description = "Sugarvale Studio crafts small-batch furniture and everyday object
 header_image = "img/example-chair.png"
 custom_css = ["css/custom.css"]
 
-additional_menus = [{ title = "Gallery", href = "gallery" }]
+additional_menus = [
+  { title = "Gallery", href = "gallery" },
+  { title = "Contact", href = "contact" }
+]
+
+
+# for the compilation of the contact form
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
